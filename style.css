@@ -26,10 +26,39 @@ body {
   height: 450px;
   background-color: var(--white);
   border-radius: 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  font-family: var(--montserrat);
 }
 
 .photo {
-  width: 50%;
+  max-width: 100%;
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
+}
+
+.perfume {
+  letter-spacing: 6px;
+}
+
+.product-info {
+  max-width: 100%;
+  padding: 32px;
+  display: grid;
+  color: var(--dark-grayish-blue);
+}
+
+.product-name, .price-off {
+  font-family: var(--fraunces);
+  font-weight: 700;
+}
+
+.product-name {
+  color: black;
+}
+
+.price-off {
+  color: var(--dark-cyan);
+  font-size: 24px;
+  font-weight: 700;
 }
