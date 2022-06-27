@@ -4,6 +4,7 @@
 
 :root {
   --dark-cyan: hsl(158, 36%, 37%);
+  --dark-cyan-active: hsl(151, 35%, 19%);
   --cream: hsl(30, 38%, 92%);
   --very-dark-blue: hsl(212, 21%, 14%);
   --dark-grayish-blue: hsl(228, 12%, 48%);
@@ -19,6 +20,10 @@ body {
   place-items: center;
   height: 95vh;
   grid-template-rows: 1fr auto;
+}
+
+p {
+  font-size: 14px;
 }
 
 .card {
@@ -48,7 +53,8 @@ body {
   color: var(--dark-grayish-blue);
 }
 
-.product-name, .price-off {
+.product-name,
+.price-off {
   font-family: var(--fraunces);
   font-weight: 700;
 }
@@ -57,8 +63,37 @@ body {
   color: black;
 }
 
+.prices {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-items: center;
+}
+
 .price-off {
   color: var(--dark-cyan);
-  font-size: 24px;
+  font-size: 2em;
   font-weight: 700;
+}
+
+.price-full {
+  text-decoration: line-through;
+}
+
+.add-to-cart {
+  background-color: var(--dark-cyan);
+  border-style: none;
+  padding: 12px;
+  border-radius: 10px;
+  color: var(--white);
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.add-to-cart:hover {
+  background-color: var(--dark-cyan-active);
+  cursor: pointer;
 }
