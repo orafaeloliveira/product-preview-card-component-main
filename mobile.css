@@ -23,7 +23,7 @@ body {
   background-color: var(--cream);
   display: grid;
   place-items: center;
-  grid-template-rows: 1fr auto;
+  grid-template-rows: 1fr 10vh;
 }
 
 .card {
