@@ -27,6 +27,10 @@ body {
 }
 
 .card {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
   background-color: var(--white);
   width: 340px;
   height: 610px;
